@@ -1,3 +1,16 @@
+import ETL
+import pandas as pd
+from datetime import datetime
+import pytz
+import requests
+from datetime import datetime
+import time
+from bs4 import BeautifulSoup as BS
+import sys
+import pandas as pd
+from pytz import timezone
+import time
+
 sys.path.insert(0,'/usr/lib/chromium-browser/chromedriver')
 
 price = []
@@ -51,6 +64,3 @@ class Pipeline():
         self.curr.execute("INSERT OR IGNORE INTO "+self.table+" VALUES (?, ?, ?, ?, ?)", [price[-1], increase[-1], percent[-1], self.date, self.time])
         self.con.commit()
         self.con.close()
-
-#pipe = Pipeline('NIK_STOCK')
-#pipe.get_data('https://www.google.com/search?q=nikkei+stock')
