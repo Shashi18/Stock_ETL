@@ -1,15 +1,10 @@
-import ETL
-import pandas as pd
 from datetime import datetime
-import pytz
 import requests
-from datetime import datetime
 import time
 from bs4 import BeautifulSoup as BS
 import sys
 import pandas as pd
 from pytz import timezone
-import time
 
 sys.path.insert(0,'/usr/lib/chromium-browser/chromedriver')
 
