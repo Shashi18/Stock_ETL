@@ -1,1 +1,1 @@
-* * * * * PYTHONPATH = /usr/local/bin/python extract_
+* * * * * PYTHONPATH = /usr/local/bin/python initialize_etl.py
