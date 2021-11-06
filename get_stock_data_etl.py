@@ -1,29 +1,5 @@
-import requests
-import sqlite3
-from datetime import date
-
-# !pip install selenium
-# !apt-get update 
-# !apt install chromium-chromedriver
-# !cp /usr/lib/chromium-browser/chromedriver /usr/bin
-# !pip install pyvirtualdisplay
-import sys
 sys.path.insert(0,'/usr/lib/chromium-browser/chromedriver')
 
-
-
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from pyvirtualdisplay import Display
-
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-dev-shm-usage')
-import time
-#!pip3 install requests requests selectorlib
-#!pip install beautifulsoup4
-from bs4 import BeautifulSoup as BS
 price = []
 increase = []
 percent = []
