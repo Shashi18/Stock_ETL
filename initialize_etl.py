@@ -1,5 +1,10 @@
-import pre_imports
-import get_stock_data_etl
+import pandas as pd
+from datetime import datetime
+import time
+from bs4 import BeautifulSoup as BS
+import sys
+from pytz import timezone
+import get_stock_data_etl as ETL
 
 stock_nik = pd.DataFrame([[0, 0]])
 time_ = time.strftime("%Y%m%d, %H%M%S", time.localtime()).split(',')[1].strip()
@@ -11,7 +16,7 @@ time_tokyo = int(datetime.now(timezone('Asia/Tokyo')).strftime('%H'))
 time_tokyo_HM = int(datetime.now(timezone('Asia/Tokyo')).strftime('%H%M'))
 
 TABLE = 'NIK_STOCK'
-pipe = get_stock_data_etl.Pipeline(TABLE)
+pipe = ETL.Pipeline(TABLE)
 pipe.get_data('https://www.google.com/search?q=nikkei+stock')
 con = sqlite3.connect('Data.db')
 curr = con.cursor()
