@@ -18,8 +18,8 @@ with open('stock_lixt.txt, 'r') as file:
     stock = f.readline().strip('\n')
     while stock:
         if stock not in stock_data_tabular:
-            stock_data_tabular[stock] = pd.DataFrame([[0, 0]])
-            stock_data_tabular[stock].columns = [stock+'_Points','Time']
+            stock_data_tabular[stock] = pd.DataFrame()
+#             stock_data_tabular[stock].columns = [stock+'_Points','Time']
         pipe = ETL.Pipeline(stock)
         pipe.get_data(base_search_query+stock+'stock')
         con = sqlite3.connect('Data.db')
