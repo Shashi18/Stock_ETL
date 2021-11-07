@@ -1,6 +1,6 @@
 <h1> Stock Live Monitoring and Prediction </h1>
 
-<h3> NOTE: This project is on-going is not complete yet </h3>
+<h3> NOTE: This project is on-going and is not complete yet.</h3>
 <p>
   This is a project that involves pulling stock information by scraping the stock information from Google Finance and then load in our database.
   The aim is to put a live dashboard showing the stocks of various companies.
