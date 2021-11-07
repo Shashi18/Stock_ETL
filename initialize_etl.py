@@ -17,11 +17,13 @@ time_tokyo_HM = int(datetime.now(timezone('Asia/Tokyo')).strftime('%H%M'))
 
 with open('stock_lixt.txt, 'r') as file:
     stock = f.readline()
-    pipe = ETL.Pipeline(stock)
-    pipe.get_data('https://www.google.com/search?q='+stock+'stock')
-    con = sqlite3.connect('Data.db')
-    curr = con.cursor()
-    for row in curr.execute('SELECT * FROM NIK_STOCK'):
-        stock_nik = stock_nik.append(pd.DataFrame([[time_tokyo_HM, row[-1]]], columns=['NIK', 'Time']),  ignore_index=True)
-    con.close()
-    time_tokyo = int(datetime.now(timezone('Asia/Tokyo')).strftime('%H'))
+    while stock:
+        pipe = ETL.Pipeline(stock)
+        pipe.get_data('https://www.google.com/search?q='+stock+'stock')
+        con = sqlite3.connect('Data.db')
+        curr = con.cursor()
+        for row in curr.execute('SELECT * FROM NIK_STOCK'):
+            stock_nik = stock_nik.append(pd.DataFrame([[time_tokyo_HM, row[-1]]], columns=['NIK', 'Time']),  ignore_index=True)
+        con.close()
+        time_tokyo = int(datetime.now(timezone('Asia/Tokyo')).strftime('%H'))
+        stock = f.readline()
