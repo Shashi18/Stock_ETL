@@ -1,5 +1,5 @@
-https://www.google.com/search?q=netflix+stock
-https://www.google.com/search?q=facebook+stock
-https://www.google.com/search?q=apple+stock
-https://www.google.com/search?q=microsoft+stock
-https://www.google.com/search?q=amazon+stock
+netflix
+facebook
+apple
+microsoft
+amazon
