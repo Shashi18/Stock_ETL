@@ -25,6 +25,7 @@ For this project we will be using
     </ul>
   </li>
 </ul>
+As an alternative, we can use AWS Lambda to execute our Python script every 2 or 5 minutes and then load the incremental data into our S3 bucket.
 
 <h2> Part 1: Stock Live Dashboard </h2>
 <h1> To be continued </h1>
