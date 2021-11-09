@@ -21,5 +21,6 @@ with open('stock_lixt.txt, 'r') as file:
         curr = con.cursor()
         for row in curr.execute('SELECT * FROM '+stock+' ORDER BY  Time DESC LIMIT 1'):
             stock_data_tabular[stock] = stock_data_tabular[stock].append(pd.DataFrame([[row[0], row[-1]]], columns=['Stock_Points', 'Time']),  ignore_index=True)
+            stock_data_tabular[stock] = stock_data_tabular[stock].reset_index(drop=True)
         con.close()
         stock = f.readline().strip('\n')
