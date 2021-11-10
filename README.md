@@ -7,6 +7,7 @@
   the stocks. The second part of this project deals with stock prediction.
 </p>
 <img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Plot3.jpg' width='150%'>
+<img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Plot4.jpg' width='150%'>
 For this project we will be using
 <ul>
   <li> Python 
