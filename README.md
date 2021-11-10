@@ -6,7 +6,7 @@
   The aim is to put a live dashboard showing the stocks of various companies. The first part of th eproject deals with a live dashboard to track
   the stocks. The second part of this project deals with stock prediction.
 </p>
-<img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Plot3.jpg' width='150%'>
+<img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Plot5.jpg' width='150%'>
 <img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Plot4.jpg' width='150%'>
 For this project we will be using
 <ul>
