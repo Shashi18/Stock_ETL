@@ -10,6 +10,29 @@
 
 <img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Plot5.jpg' width='150%'>
 <img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Plot4.jpg' width='150%'>
+<h2> What's happening here? </h2>
+<hr>
+<h4> Data Scraping </h4>
+<p>
+  We begin with scrapping data using BeautifulSoup from Google Finance every <i>n</i> minutes. I set <i>n</i> as 2. However, scrapping from the same IP would lead to an IP block. To avoid this, I use proxies and scrap from multiple servers. 
+</p>
+<h4> Scheduling </h4>
+<p>
+  For scrap scheduling, we use Cron job script that triggers the Python script stored on AWS Lambda. AWS Lambda has a timeout so our scrapping must get executed within a time frame.
+</p>
+<h4> Stock List </h4>
+<p>
+  I pull the stock list stored on AWS S3 bucket which basically can be updated as per requirements (stocks in which the user wants to invest).
+</p>
+<h4> Database </h4>
+<p>
+  After scrapping and AS Lambda gets executed, we get our incremental data which is then appended to the DynamoDB database. This database has tables for each stock present in the stock list on S3.
+</p>
+<h4> Plot </h4>
+<p>
+  Plot the stock data obtained from the database.
+</p>
+<h2> Pre-Requisites </h2>
 For this project we will be using
 <ul>
   <li> Python 
