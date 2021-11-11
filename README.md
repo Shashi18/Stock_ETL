@@ -8,8 +8,6 @@
 </p>
 <img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Architecture.jpg' width='150%'>
 
-<img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Plot5.jpg' width='150%'>
-<img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Plot4.jpg' width='150%'>
 <h2> What's happening here? </h2>
 <hr>
 <h4> Data Scraping </h4>
@@ -33,6 +31,10 @@
   Plot the stock data obtained from the database.
 </p>
 <h2> Pre-Requisites </h2>
+
+<img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Plot5.jpg' width='150%'>
+<img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Plot4.jpg' width='150%'>
+
 For this project we will be using
 <ul>
   <li> Python 
