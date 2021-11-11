@@ -24,7 +24,7 @@
 </p>
 <h4> Database </h4>
 <p>
-  After scrapping and AS Lambda gets executed, we get our incremental data which is then appended to the DynamoDB database. This database has tables for each stock present in the stock list on S3.
+  After scrapping and AS Lambda gets executed, we get our incremental data which is then appended to the DynamoDB database OR SQLite Dtabase stored on an S3 bucket. This database has tables for each stock present in the stock list on S3.
 </p>
 <h4> Plot </h4>
 <p>
