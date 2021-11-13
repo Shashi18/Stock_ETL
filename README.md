@@ -54,7 +54,12 @@ For this project we will be using
   </li>
 </ul>
 As an alternative, we can use AWS Lambda to execute our Python script every 2 or 5 minutes and then load the incremental data into our S3 bucket.
-
+<hr>
 <h2> Part 1: Stock Live Dashboard </h2>
-<h1> To be continued </h1>
-
+<h3> Working Onto It. </h3>
+<p>
+  For the dashboard, I'll need to revamp my front end skills. Stay tuned. 
+</p>
+<hr>
+<h2> Part 2: Stock Prediction </h2>
+In this section I'll explain the process flow for stock prediction. I initially went with Amazon stock history. The data of AMZN obtained from Yahoo Finance API. The most suitable algorithm for stock prediction must be the one that can remember the temporal structure of the time-series. LSTM(Long-Short Term Memory) is best known for this and works better than RNN by avoiding the issue of gradients. 
