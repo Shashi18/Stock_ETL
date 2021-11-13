@@ -63,3 +63,11 @@ As an alternative, we can use AWS Lambda to execute our Python script every 2 or
 <hr>
 <h2> Part 2: Stock Prediction </h2>
 In this section I'll explain the process flow for stock prediction. I initially went with Amazon stock history. The data of AMZN obtained from Yahoo Finance API. The most suitable algorithm for stock prediction must be the one that can remember the temporal structure of the time-series. LSTM(Long-Short Term Memory) is best known for this and works better than RNN by avoiding the issue of gradients. 
+
+An example of few stock predictions:
+<p align="center">
+    <img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/AAPL_Prediction.jpg' width='50%'>
+    <img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/MSFT_Prediction.jpg' width='50%'>
+    <img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Facebook_Prediction.jpg' width='50%'>
+    <img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Netflix_Prediction.jpg' width='50%'>
+</p>
