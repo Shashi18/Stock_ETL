@@ -52,6 +52,12 @@ For this project we will be using
       <li> This will be used to schedule our script to extract data every minute. </li>
     </ul>
   </li>
+  <li> AWS Account
+    <ul>
+      <li> An AWS account is required for S3 storage, DynamoDB database, and Lambda compute. These are available from the free tier of AWS.
+      </li>
+    </ul>
+  </li>
 </ul>
 As an alternative, we can use AWS Lambda to execute our Python script every 2 or 5 minutes and then load the incremental data into our S3 bucket.
 <hr>
@@ -71,3 +77,5 @@ An example of few stock predictions:
     <img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Facebook_Prediction.jpg' width='50%'>
     <img src='https://github.com/Shashi18/Stock_ETL/blob/main/Plots/Netflix_Prediction.jpg' width='50%'>
 </p>
+Important: Prediction is not an important part here. I'm mainly focussed on the data extraction by scrapping, transformation, and loading it into the database. Predicting stock market price is not possible even with LSTMs. Why? It's simple. The market is volatile filled with noise and a data scientist hates noise. Stock market prices are relative to news, twitter, market condition, Elon Musk's tweet, etc. You can't find data on Musk's tweet from Yahoo financial. However, all stock prices do have a trend and seasonality. What LSTMs can do is to predict the direction of movement, which my "simple" model can do pretty well. However, predicting next day's closing price is out of the question.
+
